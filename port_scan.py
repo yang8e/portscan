@@ -10,7 +10,7 @@ def socket_scan(ip,port):
         port = int(port)
         st = sk.connect_ex((ip,port))
         if st == 0:
-            print(ip+'开放端口：'+str(port)+'open')
+            print(ip+'openport:'+str(port)+'open')
         else:
             sk.close()
     except socket.error:
@@ -43,4 +43,4 @@ except:
                                     by yangge
 """)
     print("---------------------------------------------------")
-    print("example：python portscan.py 10.10.10.1 10.10.10.254")
+    print("example:python portscan.py 10.10.10.1 10.10.10.254")
